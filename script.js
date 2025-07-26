@@ -30,7 +30,7 @@ async function fetchCharacters(url) {
 
 function renderCharacters(characters) {
   charactersDiv.innerHTML = characters.map(char => `
-    <div class="bg-gray-800 p-4 rounded shadow">
+    <div class="bg-gray-800 p-4 rounded shadow bg-blue-900">
       <img src="${char.image}" alt="${char.name}" class="w-full h-48 object-cover rounded mb-2" />
       <h2 class="text-xl font-bold">${char.name}</h2>
       <p><strong>Estado:</strong> ${char.status}</p>
