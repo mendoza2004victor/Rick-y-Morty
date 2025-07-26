@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rick and Morty Explorer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <header class="bg-white shadow p-4">
+    <h1 class="text-2xl font-bold text-center">Rick and Morty Explorer</h1>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-4">
+    <!-- 🔍 Filtros -->
+    <section class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+      <input id="nameFilter" type="text" placeholder="Buscar por nombre..." class="p-2 border rounded" />
+      <select id="statusFilter" class="p-2 border rounded">
+        <option value="">Todos los estados</option>
+        <option value="alive">Alive</option>
+        <option value="dead">Dead</option>
+        <option value="unknown">Unknown</option>
+      </select>
+      <select id="genderFilter" class="p-2 border rounded">
+        <option value="">Todos los géneros</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="genderless">Genderless</option>
+        <option value="unknown">Unknown</option>
+      </select>
+      <button id="filterBtn" class="bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition">Filtrar</button>
+    </section>
+
+    <!-- 🔄 Estado -->
+    <div id="loading" class="text-center text-gray-500 mb-4 hidden">Cargando...</div>
+    <div id="noResults" class="text-center text-red-500 mb-4 hidden">No se encontraron resultados.</div>
+
+    <!-- 🧍‍♂️ Resultados -->
+    <section id="characters" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></section>
+
+    <!-- ⏮️ Paginación -->
+    <div class="flex justify-between mt-6">
+      <button id="prevBtn" class="bg-gray-300 px-4 py-2 rounded disabled:opacity-50">Anterior</button>
+      <button id="nextBtn" class="bg-gray-300 px-4 py-2 rounded disabled:opacity-50">Siguiente</button>
+    </div>
+  </main>
+
+  <script src="../js/main.js"></script>
+
+    <!-- 🔄 Estado -->
+    <div id="loading" class="text-center text-gray-500 mb-4 hidden">Cargando...</div>
+    <div id="noResults" class="text-center text-red-500 mb-4 hidden">No se encontraron resultados.</div>
+
+    <!-- 🧍‍♂️ Resultados -->
+    <section id="characters" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></section>
+      
+    <!-- ⏮️ Paginación -->
+    <div class="flex justify-between mt-6">
+      <button id="prevBtn" class="bg-gray-300 px-4 py-2 rounded disabled:opacity-50">Anterior</button>
+      <button id="nextBtn" class="bg-gray-300 px-4 py-2 rounded disabled:opacity-50">Siguiente</button>
+    </div>
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
