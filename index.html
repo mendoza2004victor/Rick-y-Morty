@@ -12,21 +12,22 @@
  
     <!-- Filtros -->
     <div class="grid md:grid-cols-4 gap-4 mb-6">
-      <input id="name" type="text" placeholder="Nombre" class="p-2 rounded text-black" />
-      <select id="status" class="p-2 rounded text-black">
+      <input id="name" type="text" placeholder="Nombre" class="p-2 rounded bg-gray-800 text-white placeholder-gray-400"/>
+      <select id="status" class="p-2 rounded bg-gray-800 text-white">
         <option value="">Estado</option>
         <option value="alive">Alive</option>
         <option value="dead">Dead</option>
         <option value="unknown">Unknown</option>
       </select>
-      <select id="gender" class="p-2 rounded text-black">
+      <select id="gender" class="p-2 rounded bg-gray-800 text-white">
         <option value="">Género</option>
         <option value="female">Female</option>
         <option value="male">Male</option>
         <option value="genderless">Genderless</option>
         <option value="unknown">Unknown</option>
       </select>
-      <button id="filterBtn" class="bg-green-500 hover:bg-green-700 p-2 rounded">Buscar</button>
+      <button id="filterBtn" class="p-2 rounded text-white bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900">
+        Buscar</button>
     </div>
 
     <!-- Estado de carga / errores -->
